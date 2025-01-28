@@ -28,14 +28,14 @@
             font-size: 3em;
         }
         header img {
-            max-width: 150px;
+            max-width: 120px;
             border-radius: 50%;
             margin: 10px auto;
         }
         section {
             padding: 20px;
             text-align: center;
-            font-size: 2em; /* Schriftgröße halbiert */
+            font-size: 2em;
         }
         .banner {
             width: 100%;
@@ -60,12 +60,12 @@
             text-align: center;
             padding: 20px;
             box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
-            font-size: 2.5em;
+            font-size: 2em;
         }
         .btn {
             background: yellow;
             color: black;
-            padding: 15px 30px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 25px;
             margin: 10px;
@@ -87,13 +87,37 @@
             margin-top: 20px;
         }
         .small-images img {
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .about-text {
-            font-size: 2em; /* Textgröße halbiert */
+            font-size: 2em;
+        }
+
+        /* RESPONSIVE DESIGN FÜR HANDY */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+                padding: 30px 10px;
+            }
+            .about-text {
+                font-size: 1.5em;
+            }
+            section {
+                font-size: 1.5em;
+            }
+            .btn {
+                font-size: 1.2em;
+                padding: 8px 15px;
+            }
+            footer {
+                font-size: 1.5em;
+            }
+            .small-images img {
+                max-width: 250px;
+            }
         }
     </style>
 </head>
